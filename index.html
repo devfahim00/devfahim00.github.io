@@ -1,5 +1,297 @@
-<html>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fahim — Mobile & Backend Developer</title>
+  <meta name="description" content="Fahim (devfahim00) — mobile & backend developer building connected systems with Flutter, Kotlin and Cloudflare Workers." />
+  <meta name="theme-color" content="#0a0c11" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fahim — Mobile & Backend Developer" />
+  <meta property="og:description" content="Connected systems from app to edge: Flutter, Kotlin, Cloudflare Workers, PHP." />
+  <meta property="og:url" content="https://devfahim00.github.io" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚡%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="glow" id="glow" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" aria-label="Fahim — home"><span class="logo-mark">⚡</span> fahim<span class="logo-dim">.dev</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#build">How I build</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://t.me/droxilen" target="_blank" rel="noopener" class="btn btn-primary btn-sm nav-cta">Let's talk</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="pill reveal"><i class="live"></i> Open to collaboration</span>
+          <h1 class="reveal" style="--d:.08s">Building <span class="grad">connected systems</span> from app to edge.</h1>
+          <p class="typed-line reveal" style="--d:.16s">I build <b id="typed"></b><span class="caret"></span></p>
+          <div class="hero-actions reveal" style="--d:.24s">
+            <a href="#projects" class="btn btn-primary">View projects <span aria-hidden="true">→</span></a>
+            <a href="https://t.me/droxilen" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+              @droxilen
+            </a>
+          </div>
+          <ul class="hero-meta reveal" style="--d:.32s">
+            <li>📍 Bangladesh 🇧🇩</li>
+            <li>🗣️ বাংলা · English</li>
+            <li>📱 Flutter · Kotlin</li>
+            <li>☁️ Cloudflare Workers</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group"><span>Flutter</span><span>Kotlin</span><span>Dart</span><span>Cloudflare Workers</span><span>KV</span><span>D1</span><span>PHP</span><span>MySQL</span><span>Go</span><span>Python</span><span>ExoPlayer</span><span>Telegram Bots</span></div>
+        <div class="marquee-group"><span>Flutter</span><span>Kotlin</span><span>Dart</span><span>Cloudflare Workers</span><span>KV</span><span>D1</span><span>PHP</span><span>MySQL</span><span>Go</span><span>Python</span><span>ExoPlayer</span><span>Telegram Bots</span></div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">01 — About</span>
+          <h2>Systems, not just screens.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm <strong>Fahim</strong>, a developer from Bangladesh. I design and ship whole ecosystems — the mobile app, the API behind it, the admin panel that runs it, and the bots and automation around it — instead of isolated features.</p>
+            <p>My work centers on streaming, proxy tooling, payment verification and Telegram-based products, with a focus on the Bangladeshi internet context: bKash payments, local content and tools that stay fast on real-world connections.</p>
+            <div class="about-tags">
+              <span class="tag">Streaming</span><span class="tag">Proxies</span><span class="tag">Payments</span><span class="tag">Bots</span><span class="tag">Admin panels</span>
+            </div>
+          </div>
+
+          <div class="term reveal" style="--d:.1s">
+            <div class="term-bar"><i></i><i></i><i></i><span>fahim@devfahim00 — zsh</span></div>
+            <div class="term-body">
+              <div><span class="prompt">fahim@devfahim00</span> <span class="dim">~</span> $ neofetch</div>
+              <div class="row"><span class="k">name</span><span>Fahim</span></div>
+              <div class="row"><span class="k">role</span><span>Mobile &amp; Backend Developer</span></div>
+              <div class="row"><span class="k">location</span><span>Bangladesh 🇧🇩</span></div>
+              <div class="row"><span class="k">languages</span><span>বাংলা · English</span></div>
+              <div class="row"><span class="k">builds</span><span>streaming · proxies · payments · bots</span></div>
+              <div class="row"><span class="k">approach</span><span>client + API + admin + automation</span></div>
+              <div class="row"><span class="k">reach</span><span>t.me/droxilen</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services">
+          <article class="glass service reveal">
+            <div class="service-ico">📱</div>
+            <h3>Mobile apps</h3>
+            <p>Flutter and native Android (Kotlin) apps — streaming clients, downloaders, proxy managers and payment tools.</p>
+          </article>
+          <article class="glass service reveal" style="--d:.08s">
+            <div class="service-ico">☁️</div>
+            <h3>Edge backends</h3>
+            <p>Serverless APIs on Cloudflare Workers with KV, D1 and Queues — plus PHP/MySQL for shared hosting. IPTV and HLS proxies included.</p>
+          </article>
+          <article class="glass service reveal" style="--d:.16s">
+            <div class="service-ico">🤖</div>
+            <h3>Bots &amp; automation</h3>
+            <p>Telegram bots and Mini Apps, SMS forwarding pipelines, webhooks and full admin panels to run everything.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 — Stack</span>
+          <h2>Tools I reach for.</h2>
+        </div>
+        <div class="stack-grid">
+          <div class="glass stack-col reveal">
+            <h3>Languages</h3>
+            <div class="chips"><span>Kotlin</span><span>Dart</span><span>JavaScript</span><span>PHP</span><span>Python</span><span>Go</span><span>HTML / CSS</span></div>
+          </div>
+          <div class="glass stack-col reveal" style="--d:.06s">
+            <h3>Mobile &amp; media</h3>
+            <div class="chips"><span>Flutter</span><span>Android</span><span>Media3 / ExoPlayer</span><span>Material 3</span><span>NewPipeExtractor</span><span>CloudStream</span></div>
+          </div>
+          <div class="glass stack-col reveal" style="--d:.12s">
+            <h3>Backend &amp; cloud</h3>
+            <div class="chips"><span>Cloudflare Workers</span><span>KV</span><span>D1</span><span>Queues</span><span>MySQL</span><span>Flask</span><span>Telegram Bot API</span></div>
+          </div>
+          <div class="glass stack-col reveal" style="--d:.18s">
+            <h3>Tooling</h3>
+            <div class="chips"><span>Git</span><span>GitHub Actions</span><span>Gradle</span><span>Wrangler</span><span>Termux</span><span>yt-dlp</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">03 — Projects</span>
+          <h2>Selected work.</h2>
+          <p>Open-source apps, backends and tools. Star counts are pulled live from GitHub.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button class="filter" data-filter="backend" aria-pressed="false">Backend</button>
+          <button class="filter" data-filter="tools" aria-pressed="false">Tools</button>
+        </div>
+
+        <div class="cards reveal">
+          <article class="card" data-cat="mobile">
+            <div class="card-top"><div class="emoji">⚡</div><span class="arrow" aria-hidden="true">↗</span></div>
+            <h3><a href="https://github.com/devfahim00/SparkTube" target="_blank" rel="noopener">SparkTube</a></h3>
+            <p>Lightweight, anonymous YouTube client for Android. No Google account, no API keys, no tracking — and no live streams. Region-based trending and a music tab.</p>
+            <div class="tags"><span class="tag">Kotlin</span><span class="tag">NewPipeExtractor</span><span class="tag">Media3</span></div>
+            <div class="card-foot"><span class="stars" data-repo="SparkTube">★ <b>0</b></span><a class="dl" href="https://github.com/devfahim00/SparkTube/releases/latest" target="_blank" rel="noopener">Download APK</a></div>
+          </article>
+
+          <article class="card" data-cat="mobile">
+            <div class="card-top"><div class="emoji">🎬</div><span class="arrow" aria-hidden="true">↗</span></div>
+            <h3><a href="https://github.com/devfahim00/AdlessTube" target="_blank" rel="noopener">AdlessTube</a></h3>
+            <p>Ad-free, open-source YouTube client with downloads, YouTube Music support, audio-only mode and full offline playback.</p>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Offline</span></div>
+            <div class="card-foot"><span class="stars" data-repo="AdlessTube">★ <b>0</b></span><a class="dl" href="https://github.com/devfahim00/AdlessTube/releases/latest" target="_blank" rel="noopener">Download APK</a></div>
+          </article>
+
+          <article class="card" data-cat="mobile backend">
+            <div class="card-top"><div class="emoji">💳</div><span class="arrow" aria-hidden="true">↗</span></div>
+            <h3><a href="https://github.com/devfahim00/PayGateApp" target="_blank" rel="noopener">PayGateApp</a></h3>
+            <p>Open-source bKash payment gateway. An Android app forwards payment SMS in real time to a Cloudflare Worker that verifies transactions and serves payment pages.</p>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Cloudflare Workers</span><span class="tag">KV</span></div>
+            <div class="card-foot"><span class="stars" data-repo="PayGateApp">★ <b>0</b></span><span>GPL-3.0</span></div>
+          </article>
+
+          <article class="card" data-cat="mobile">
+            <div class="card-top"><div class="emoji">🦊</div><span class="arrow" aria-hidden="true">↗</span></div>
+            <h3><a href="https://github.com/devfahim00/Spark" target="_blank" rel="noopener">Spark</a></h3>
+            <p>Minimal proxy client built on FlClash (ClashMeta), extended with Telegram-based authentication, referrals and a companion admin app.</p>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">ClashMeta</span></div>
+            <div class="card-foot"><span class="stars" data-repo="Spark">★ <b>0</b></span><span>Based on FlClash</span></div>
+          </article>
+
+          <article class="card" data-cat="tools">
+            <div class="card-top"><div class="emoji">🧩</div><span class="arrow" aria-hidden="true">↗</span></div>
+            <h3><a href="https://github.com/devfahim00/DxRepoCS" target="_blank" rel="noopener">DxRepoCS</a></h3>
+            <p>Custom CloudStream extension repository with extra content providers that can be added by URL.</p>
+            <div class="tags"><span class="tag">Kotlin</span><span class="tag">CloudStream</span></div>
+            <div class="card-foot"><span class="stars" data-repo="DxRepoCS">★ <b>0</b></span><span>MIT</span></div>
+          </article>
+
+          <article class="card" data-cat="mobile tools">
+            <div class="card-top"><div class="emoji">🚀</div><span class="arrow" aria-hidden="true">↗</span></div>
+            <h3><a href="https://github.com/devfahim00/STD" target="_blank" rel="noopener">STD — Speed Test</a></h3>
+            <p>Minimal dark speed tester using multi-threaded HTTP streaming, with a live gauge and live / peak / average stats.</p>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Multi-thread</span></div>
+            <div class="card-foot"><span class="stars" data-repo="STD">★ <b>0</b></span><span>GPL-3.0</span></div>
+          </article>
+
+          <article class="card" data-cat="backend tools">
+            <div class="card-top"><div class="emoji">🛰</div><span class="arrow" aria-hidden="true">↗</span></div>
+            <h3><a href="https://github.com/devfahim00/Clash.Meta.Extra" target="_blank" rel="noopener">Clash.Meta.Extra</a></h3>
+            <p>Customized Mihomo (Clash.Meta) kernel in Go — rule-based routing, multi-protocol proxying, DNS with fake-IP and a REST controller.</p>
+            <div class="tags"><span class="tag">Go</span><span class="tag">Mihomo</span><span class="tag">Networking</span></div>
+            <div class="card-foot"><span class="stars" data-repo="Clash.Meta.Extra">★ <b>0</b></span><span>GPL-3.0</span></div>
+          </article>
+
+          <article class="card" data-cat="tools">
+            <div class="card-top"><div class="emoji">⬇️</div><span class="arrow" aria-hidden="true">↗</span></div>
+            <h3><a href="https://github.com/devfahim00/SparkDownloader" target="_blank" rel="noopener">SparkDownloader</a></h3>
+            <p>yt-dlp based media downloader that you can run on-device through Termux.</p>
+            <div class="tags"><span class="tag">yt-dlp</span><span class="tag">Termux</span></div>
+            <div class="card-foot"><span class="stars" data-repo="SparkDownloader">★ <b>0</b></span><span>&nbsp;</span></div>
+          </article>
+        </div>
+
+        <div class="more reveal">
+          <a class="btn btn-ghost" href="https://github.com/devfahim00?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW I BUILD -->
+    <section id="build" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">04 — How I build</span>
+          <h2>One architecture, many products.</h2>
+          <p>Thin, fast clients talking to a serverless edge backend — with admin panels and bots managing everything behind the scenes.</p>
+        </div>
+        <div class="flow">
+          <div class="node reveal"><span class="n">01</span><h3>Clients</h3><p>Flutter &amp; Kotlin apps, Telegram Mini Apps, SMS forwarder</p></div>
+          <div class="node reveal" style="--d:.08s"><span class="n">02</span><h3>Edge API</h3><p>Cloudflare Workers handling auth, verification and proxying</p></div>
+          <div class="node reveal" style="--d:.16s"><span class="n">03</span><h3>Storage</h3><p>KV, D1 and Queues — plus MySQL where hosting demands it</p></div>
+          <div class="node reveal" style="--d:.24s"><span class="n">04</span><h3>Control</h3><p>Admin panels, webhooks and bots to operate the system</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="cta glass reveal">
+          <span class="eyebrow">05 — Contact</span>
+          <h2>Have an idea? <span class="grad">Let's build it.</span></h2>
+          <p>Open to collaboration on Flutter / Android apps, Cloudflare Workers backends, payment and streaming tools, and open-source projects.</p>
+          <div class="hero-actions center">
+            <a href="https://t.me/droxilen" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+              Message on Telegram
+            </a>
+            <a href="https://github.com/devfahim00" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              devfahim00
+            </a>
+            <button class="btn btn-ghost" data-copy="@droxilen" type="button"><span>Copy @droxilen</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Fahim · Made with ❤️ in Bangladesh 🇧🇩</span>
+      <span class="dim">Built with HTML, CSS, JS &amp; three.js</span>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/scene.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
